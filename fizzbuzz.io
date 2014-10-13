@@ -4,4 +4,6 @@ getFizzBuzz := method(number,
 	if(number % 5 == 0, return "Buzz!")
 	number)
 
-getFizzBuzz(15) println
+fizzBuzz := method(for(number, 1, 100, 1, getFizzBuzz(number)))
+
+# this does not do anything
